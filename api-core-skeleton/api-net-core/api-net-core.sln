@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-net-core", "api-net-core\api-net-core.csproj", "{2749B36C-9C44-4FE9-8C23-E7CB69F7D450}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-net-core", "api-net-core\api-net-core.csproj", "{2749B36C-9C44-4FE9-8C23-E7CB69F7D450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-net-core-tests", "api-net-core-tests\api-net-core-tests.csproj", "{1F9CC6E4-69A6-4097-BE27-1D7F8A573140}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2749B36C-9C44-4FE9-8C23-E7CB69F7D450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2749B36C-9C44-4FE9-8C23-E7CB69F7D450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2749B36C-9C44-4FE9-8C23-E7CB69F7D450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9CC6E4-69A6-4097-BE27-1D7F8A573140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9CC6E4-69A6-4097-BE27-1D7F8A573140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9CC6E4-69A6-4097-BE27-1D7F8A573140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9CC6E4-69A6-4097-BE27-1D7F8A573140}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
