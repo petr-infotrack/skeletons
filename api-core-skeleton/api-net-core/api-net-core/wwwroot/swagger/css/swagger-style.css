@@ -1,0 +1,19 @@
+﻿.swagger-section #login {
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #547f00;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+    .swagger-section #login:hover {
+        background-color: #547f00;
+    }
