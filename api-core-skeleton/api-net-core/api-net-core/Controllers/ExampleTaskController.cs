@@ -11,10 +11,10 @@ namespace ApiNetCore.Controllers
     public class ExampleTaskController : ControllerBase
     {
 
-        private readonly ILogger<ExampleValueController> logger;
+        private readonly ILogger<ExampleTaskController> logger;
         private readonly IExampleService exampleService;
 
-        public ExampleTaskController(ILogger<ExampleValueController> logger, IExampleService exampleService)
+        public ExampleTaskController(ILogger<ExampleTaskController> logger, IExampleService exampleService)
         {
             this.logger = logger;
             this.exampleService = exampleService;
@@ -23,7 +23,7 @@ namespace ApiNetCore.Controllers
         [HttpGet("calculate")]
         public async Task<IActionResult> Calculate([FromQuery] int x, int y)
         {
-            var result = await this.exampleService.CalculateTotal(x, y);
+            var result = await this.exampleService.CalculateTotalAsync(x, y);
 
             var jsonResponse = new
             {

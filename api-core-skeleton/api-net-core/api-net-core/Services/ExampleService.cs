@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -16,12 +15,14 @@ namespace ApiNetCore.Services
         }
 
 
-        public async Task<int> CalculateTotal(int x, int y)
+        public async Task<int> CalculateTotalAsync(int x, int y)
         {
+            this.logger.LogTrace("ExampleService->CalculateTotalAsync() - method executed");
 
-            this.logger.LogTrace("CalculateTotal methods was invoked" );
 
-            return (x + y) ;
+            var task = await Task.Run(() => x + y);
+
+            return task;
         }
     }
 }

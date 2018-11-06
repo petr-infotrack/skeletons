@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using ApiNetCore.Services;
 using Microsoft.Extensions.Logging;
 
-namespace ApiNetCoreTests.Unit.Helpers
+namespace ApiNetCoreTests.Shared.Helpers
 {
+    /*  ---------------------------------------------------------------------------------------------------------------
+        LOGGER - STUB  - Essential for stubbing/mocking ILogger responses to extension methods.. (Moq often fails)         
+        --------------------------------------------------------------------------------------------------------------- */
     public class LoggerStub: ILogger<ExampleService>
     {
         public List<Tuple<string, string>> LoggedMessages;
