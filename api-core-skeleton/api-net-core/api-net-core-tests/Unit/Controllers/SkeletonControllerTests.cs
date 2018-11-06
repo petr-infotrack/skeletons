@@ -2,6 +2,7 @@
 using ApiNetCore.Services;
 using Microsoft.Extensions.Logging;
 using Moq;
+using Newtonsoft.Json;
 using Xunit;
 
 namespace ApiNetCoreTests.Unit.Controllers
@@ -32,20 +33,16 @@ namespace ApiNetCoreTests.Unit.Controllers
         [Fact]
         public async void ShouldReturnValidResult()
         {
-            var jsonResult  = await this.controller.Calculate(1, 3) as Microsoft.AspNetCore.Mvc.OkObjectResult;
+            var result = await this.controller.Calculate(1, 3) as Microsoft.AspNetCore.Mvc.OkObjectResult;
 
-            
-            Assert.NotNull(jsonResult);
+            Assert.NotNull(result);
+
+
             this.mockService.Verify(m => m.CalculateTotalAsync(It.IsAny<int>(), It.IsAny<int>()), Times.Once);
 
-           // Assert.Equal(5, result);
+            var json = JsonConvert.SerializeObject(result.Value);
 
-
-
-            //Assert.True(this.loggerStub.LoggedMessages.Count > 0);
-
-            //Assert.Contains("TRACE", this.loggerStub.LoggedMessages[0].Item1);
-            //Assert.Contains("CalculateTotalAsync methods was invoked", this.loggerStub.LoggedMessages[0].Item2);
+            Assert.Equal("{\"result\":5}", json);
 
         }
     }
