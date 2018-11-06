@@ -20,9 +20,4 @@
     <ProjectReference Include="..\api-net-core\api-net-core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Integration\" />
-    <Folder Include="Acceptance\" />
-  </ItemGroup>
-
 </Project>

@@ -1,9 +1,5 @@
-﻿using System.Linq;
-using System.Text;
-using ApiNetCore.Services;
-using ApiNetCoreTests.Shared.Helpers;
-using Microsoft.Extensions.Logging.Internal;
-using Moq;
+﻿using ApiNetCore.Services;
+using ApiNetCoreTests.Helpers.Logger;
 using Xunit;
 
 namespace ApiNetCoreTests.Unit.Services

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using ApiNetCore.Services;
 using Microsoft.Extensions.Logging;
 
-namespace ApiNetCoreTests.Shared.Helpers
+namespace ApiNetCoreTests.Helpers.Logger
 {
     /*  ---------------------------------------------------------------------------------------------------------------
         LOGGER - STUB  - Essential for stubbing/mocking ILogger responses to extension methods.. (Moq often fails)         
