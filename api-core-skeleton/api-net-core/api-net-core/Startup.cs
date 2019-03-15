@@ -26,6 +26,8 @@ namespace api_net_core
 
 
         }
+        
+        // the change
 
         public IConfiguration Configuration { get; }
 
